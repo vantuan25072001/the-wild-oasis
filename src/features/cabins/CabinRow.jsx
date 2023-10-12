@@ -50,6 +50,7 @@ const Discount = styled.div`
 
 function CabinRow({ cabin }) {
   const { isDeleting, deleteCabin } = useDeleteCabin();
+  // eslint-disable-next-line no-unused-vars
   const { isCreating, createCabin } = useCreateCabin();
   const {
     id: cabinId,
