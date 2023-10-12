@@ -41,6 +41,11 @@ function Filter({ filterField, options }) {
 
   function handleClick(value) {
     searchParams.set(filterField, value);
+
+    //neu ma o trang 4 trong khi nhieu filter khac k du 4 trang thi set thanh page 1
+    if (searchParams.get("page")) {
+      searchParams.set("page", 1);
+    }
     setSearchParams(searchParams);
   }
   return (
