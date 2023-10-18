@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Button from "./Button";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { useSearchParams } from "react-router-dom";
 import { PAGE_SIZE } from "../utils/constants";
